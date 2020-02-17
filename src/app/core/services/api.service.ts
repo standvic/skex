@@ -11,7 +11,7 @@ export class ApiService {
 
   public getRecipes() {
     return this.http
-      .get<any[]>('https://api.spoonacular.com/recipes/search?apiKey=5f1cc00d4b304d4dafc122421bcae47e');
+      .get<any[]>('https://api.sketchfab.com/v3/search?type=models');
   }
 
 

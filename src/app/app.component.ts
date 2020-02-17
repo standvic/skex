@@ -9,5 +9,5 @@ export class AppComponent {
   /**
    * The title of main page
    */
-  title = 'Spoon of angular';
+  title = 'Sketchfab explorer';
 }

@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { FullLayoutComponent } from './full-layout.component';
+import { FooterComponent } from '../footer/footer.component';
+import { HeaderComponent } from '../header/header.component';
 
 describe('FullLayoutComponent', () => {
   let component: FullLayoutComponent;
@@ -8,7 +12,8 @@ describe('FullLayoutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FullLayoutComponent ]
+      imports: [RouterTestingModule, MatToolbarModule],
+      declarations: [ FullLayoutComponent, FooterComponent, HeaderComponent ]
     })
     .compileComponents();
   }));
