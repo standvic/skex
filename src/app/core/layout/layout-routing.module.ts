@@ -9,25 +9,24 @@ import {MinLayoutComponent} from './min-layout/min-layout.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/recipes',
+    redirectTo: '/search',
     pathMatch: 'full'
   },
   {
     path: '',
     component: MinLayoutComponent,
     children: [
-      // { path: 'recipes', loadChildren: '../../modules/recipes/recipes.module#RecipesModule' },
+      // { path: 'search', loadChildren: '../../modules/search/search.module#SearchModule' },
     ]
   },
   {
     path: '',
     component: FullLayoutComponent,
     children: [
-      { path: 'recipes', loadChildren: '../../modules/recipes/recipes.module#RecipesModule' },
-      { path: 'ingredients', loadChildren: '../../modules/ingredients/ingredients.module#IngredientsModule' },
-      { path: 'menu-items', loadChildren: '../../modules/menu-items/menu-items.module#MenuItemsModule' },
-      { path: 'ingredients', loadChildren: '../../modules/products/products.module#ProductsModule' },
-      { path: 'wine', loadChildren: '../../modules/wine/wine.module#WineModule' },
+      { path: 'search', loadChildren: '../../modules/search/search.module#SearchModule' },
+      { path: 'models', loadChildren: '../../modules/models/models.module#ModelsModule' },
+      { path: 'members', loadChildren: '../../modules/members/members.module#MembersModule' },
+      { path: 'collections', loadChildren: '../../modules/collections/collections.module#CollectionsModule' }
     ]
   },
 ];

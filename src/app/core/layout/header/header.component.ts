@@ -3,7 +3,7 @@ import { ApiService } from '../../services/api.service';
 import {Observable} from 'rxjs';
 
 /**
- * The main page footer component
+ * The main page header component
  */
 @Component({
   selector: 'app-header',

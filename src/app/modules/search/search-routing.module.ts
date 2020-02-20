@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MenuItemsComponent } from './menu-items.component';
+import { SearchComponent } from './search.component';
 
 const routes: Routes = [
-  { path: '', component: MenuItemsComponent }
+  { path: '', component: SearchComponent }
 ];
 
 /**
- * The menu items routing module
+ * The search routing module
  */
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class MenuItemsRoutingModule {}
+export class SearchRoutingModule {}
